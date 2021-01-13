@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
 *{
   overflow-x: hidden;
   box-sizing: border-box;
@@ -42,12 +43,29 @@ nav a {
   transition: .4s;
 }
 
+.h3{
+  font-style: italic;
+  font-size: 30px;
+}
+
+.bt1{
+  font-style: italic white ;
+  font-size: 20px;
+  background-color:#faaca8 ;
+}
+
+.ft{
+  font-style: italic;
+  font-size: 16px;
+}
+
 section{
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  margin-right: 0px;
 }
 
 section h2{
@@ -58,6 +76,7 @@ section h2{
 
 .About {
   background: white;
+  margin-right: 0px;
 }
 
 .Gallery {
@@ -84,41 +103,41 @@ section h2{
 .btn-start {
     font-size: 18px;
 }
-.btn:not(:disabled):not(.disabled) {
-  cursor: pointer;
-}
-.btn {
-  font-weight: 400;
-  border-radius: 15px;
-  background-color: #faaca8;
-  border: 1px solid transparent;
-  padding: 1.2rem 1.6rem;
-}
 
-.row {
-  
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-
-.col-sm-6 {
-position: relative;
-width: 100%;
-min-height: 1px;
-padding-right: 15px;
-padding-left: 15px;
-}
 
 .margin {
   margin-left: 155px;
+}
+
+footer {
+  background: #fac0bd;
+  overflow-x: hidden;
+  padding: 14vmin 18vmin;
+}
+
+footer p > span {
+  color: #ff512f;
+}
+
+footer input {
+  border: none !important;
+}
+
+footer input::placeholder {
+  color: rgb(0, 0, 0) !important;
+}
+
+footer .input-group .input-group-text {
+  background: var(--bggradient);
+  border: none;
+}
+
+footer .column i {
+  color: #dd2476;
+}
+
+/* It is Adjacent sibling combinator */
+
+footer .column i + i {
+  padding: 0 0.5em;
 }
