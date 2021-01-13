@@ -45,7 +45,7 @@ nav a {
 
 .h3{
   font-style: italic;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .bt1{
@@ -115,9 +115,7 @@ footer {
   padding: 14vmin 18vmin;
 }
 
-footer p > span {
-  color: #ff512f;
-}
+
 
 footer input {
   border: none !important;
@@ -132,12 +130,128 @@ footer .input-group .input-group-text {
   border: none;
 }
 
-footer .column i {
-  color: #dd2476;
-}
+
 
 /* It is Adjacent sibling combinator */
 
 footer .column i + i {
   padding: 0 0.5em;
 }
+
+#carousel {
+  position: relative;
+  height: 400px;
+  top: 50%;
+  transform: translateY(-50%);
+  
+
+}
+#carousel div {
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 1;
+  background-color: white;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 1px 1px 12px #555;
+  width: 25vw;
+}
+
+#carousel div span img {
+  border-radius: 50%;
+  width: 100%;
+  margin-top: 1vw;
+  transition: width 1s;
+  box-shadow:none;
+  position: relative;
+}
+
+#carousel div.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+  width: 13vw;
+}
+
+#carousel div.hideRight {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+  width: 13vw;
+}
+
+#carousel div.prev {
+  z-index: 5;
+  left: 30%;
+  transform: translateY(50px) translateX(-50%);
+  width: 20vw;
+}
+#carousel div.prev img{
+  width: 14vw;
+}
+#carousel div.prev p{
+  font-size: 18px;
+}
+#carousel div.prevLeftSecond {
+  z-index: 4;
+  left: 15%;
+  transform: translateY(100px) translateX(-50%);
+  opacity: 0.7;
+  width: 13vw;
+}
+#carousel div.prevLeftSecond img{
+  width: 8vw;
+}
+#carousel div.prevLeftSecond p{
+  font-size: 16px;
+}
+#carousel div.selected {
+  z-index: 10;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+  width: 25vw;
+}
+#carousel div.selected img{
+  width: 18vw;
+}
+#carousel div.next {
+  z-index: 5;
+  left: 70%;
+  transform: translateY(50px) translateX(-50%);
+  width: 20vw;
+}
+#carousel div.next img{
+  width: 14vw;
+}
+#carousel div.next p{
+  font-size: 18px;
+}
+
+#carousel div.nextRightSecond {
+  z-index: 4;
+  left: 85%;
+  transform: translateY(100px) translateX(-50%);
+  opacity: 0.7;
+  width: 13vw;
+}
+#carousel div.nextRightSecond img{
+  width: 8vw;
+}
+#carousel div.nextRightSecond p{
+  font-size: 16px;
+}
+#carousel div span{
+  left: 0;
+  position:relative;
+  text-align:center;
+  top: 0%;
+  width: 100%;
+
+}
+#carousel div span a{
+  color:#d39fe3;
+  font-size: 2vw;
+  margin: 5%;
+}
+
+
