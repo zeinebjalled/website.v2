@@ -1,10 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
 *{
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   box-sizing: border-box;
 }
+.saa
+{
 
-
+  margin-right: 10px;
+}
+.navsty{
+  font-size: 20px;
+}
 body{
     font-family: sans-serif;
     margin: 0px;
@@ -52,6 +58,7 @@ nav a {
   font-style: italic white ;
   font-size: 20px;
   background-color:#faaca8 ;
+  color :white;
 }
 
 .ft{
@@ -64,12 +71,11 @@ section{
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   margin-right: 0px;
 }
 
 section h2{
-  font-size: 5rem;
+  /* font-size: 5rem; */
   color: black ;
 
 }
@@ -111,7 +117,7 @@ section h2{
 
 footer {
   background: #fac0bd;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   padding: 14vmin 18vmin;
 }
 
