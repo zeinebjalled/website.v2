@@ -2,10 +2,10 @@
 *{
   /* overflow-x: hidden; */
   box-sizing: border-box;
+  
 }
 .saa
 {
-
   margin-right: 10px;
 }
 .navsty{
@@ -55,7 +55,7 @@ nav a {
 }
 
 .bt1{
-  font-style: italic white ;
+  font-style: italic  ;
   font-size: 20px;
   background-color:#faaca8 ;
   color :white;
@@ -94,16 +94,8 @@ section h2{
 }
 .Team , .Subscribe{
   background: #faaca8 ; 
+  margin-bottom: 20px;
 }
-
-.bubble {
-  position: absolute;
-  z-index: -2;
-  background: linear-gradient(to right top,#ddd6f3, #faaca8 );
-  transform: scale(2);
-  transition: all 0.5 ease;
-}
-
 
 @media (max-width: 575px)
 .btn-start {
@@ -120,7 +112,6 @@ footer {
   /* overflow-x: hidden; */
   padding: 14vmin 18vmin;
 }
-
 
 
 footer input {
@@ -261,3 +252,56 @@ footer .column i + i {
 }
 
 
+.box-area {
+  display: flex ;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  z-index: 4 ;
+}
+
+.single-box {
+ 
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
+  justify-content: center ;
+  width: 250px;
+  
+  border-radius: 5%;
+  text-align:center ;
+margin:20px ;
+padding: 20px;
+background-color: rgb(255, 255, 255);
+transition: 10s;}
+
+.img-area { 
+  display: :flex;
+  justify-content: center; 
+  align-items: center ;
+  width : 80px;
+  height: 80px ;
+  border: 6px solid #ddd;
+  border-radius : 50% ; 
+  margin-bottom: 10px; 
+  padding: 20px;
+   
+}
+
+.img-text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.margin2 {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.email{
+  font-size: 20px;
+  font-style: italic;
+}
