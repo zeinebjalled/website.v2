@@ -42,6 +42,7 @@ body{
 nav h1, nav ul, .imgh {
   font-size: 1.5rem;
   flex: 1; 
+  position: -webkit-sticky;
 
 }
 nav ul, .imgh{
@@ -257,7 +258,7 @@ footer .column i + i {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 100px;
+ 
   z-index: 4 ;
 }
 
@@ -356,6 +357,12 @@ input{
   margin-right: 0px;
   padding: 0px 0px;
 }
+.ssh{
+  justify-content:space-around;
+max-width:100%}
+
+li{
+  margin:4%}
 
 
 
